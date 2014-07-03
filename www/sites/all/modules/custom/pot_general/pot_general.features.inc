@@ -29,6 +29,14 @@ function pot_general_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'pottery_item' => array(
+      'name' => t('Pottery item'),
+      'base' => 'node_content',
+      'description' => t('A type of pottery that\'s available for sale.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
   );
   return $items;
 }

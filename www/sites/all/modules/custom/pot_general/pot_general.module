@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the pot_general feature.
+ */
+
+include_once 'pot_general.features.inc';

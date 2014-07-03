@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ * Code for the Quilted Development feature.
+ */
+
+include_once('quilted_dev.features.inc');
+
+/**
+ * Implements hook_enable().
+ */
+function quilted_dev_enable() {
+  $modules = array(
+    'googleanalytics',
+    'backup_migrate'
+  );
+  module_disable($modules);
+}

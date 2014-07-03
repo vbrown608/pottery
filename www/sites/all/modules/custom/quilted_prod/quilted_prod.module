@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Code for the Quilted Development feature.
+ */
+
+include_once('quilted_prod.features.inc');
+
+/**
+ * Implements hook_enable().
+ */
+function quilted_prod_enable() {
+  $modules = array(
+    'devel',
+    'shield',
+    'maillog',
+  );
+  module_disable($modules);
+}

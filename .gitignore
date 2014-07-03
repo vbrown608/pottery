@@ -1,0 +1,27 @@
+# Ignore settings.php
+www/sites/default/settings.php
+
+# Ignore files
+www/sites/default/files/
+
+# Ignore Mac files
+.DS_STORE
+
+# Ignore backups and temporary files
+www/backup
+www/sites/default/files/tmp/
+tmp_files/*
+!tmp_files/PLACEHOLDER.md
+private_files/*
+!private_files/PLACEHOLDER.md
+
+
+# Ignore logs
+log/
+
+# Ignore devel themer and maillog modules
+www/sites/all/modules/devel_themer
+www/sites/all/modules/simplehtmldom
+
+# Ignore all auto-generated patch files
+PATCHES.txt

@@ -242,6 +242,7 @@ function pot_general_strongarm() {
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
     'node' => TRUE,
+    'taxonomy' => TRUE,
     'user' => TRUE,
   );
   $export['path_alias_whitelist'] = $strongarm;

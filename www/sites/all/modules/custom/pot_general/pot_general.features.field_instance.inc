@@ -198,6 +198,54 @@ function pot_general_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-pottery_item-field_pottery_type'
+  $field_instances['node-pottery_item-field_pottery_type'] = array(
+    'bundle' => 'pottery_item',
+    'default_value' => array(
+      0 => array(
+        'target_id' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Select the type of pottery.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pottery_type',
+    'label' => 'Pottery type',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 35,
+    ),
+  );
+
   // Exported field_instance: 'node-pottery_item-field_price'
   $field_instances['node-pottery_item-field_price'] = array(
     'bundle' => 'pottery_item',
@@ -250,8 +298,10 @@ function pot_general_field_default_field_instances() {
   t('Inventory count');
   t('Inventory count represents the number of this pottery item that are available for sale.');
   t('Pottery image');
+  t('Pottery type');
   t('Price');
   t('Price represents the cost of a pottery item.');
+  t('Select the type of pottery.');
   t('Upload an image of the pottery item for sale.');
 
   return $field_instances;

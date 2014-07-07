@@ -148,6 +148,56 @@ function pot_general_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-pottery_item-field_pottery_image'
+  $field_instances['node-pottery_item-field_pottery_image'] = array(
+    'bundle' => 'pottery_item',
+    'deleted' => 0,
+    'description' => 'Upload an image of the pottery item for sale.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pottery_image',
+    'label' => 'Pottery image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 1,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'pottery_medium',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 34,
+    ),
+  );
+
   // Exported field_instance: 'node-pottery_item-field_price'
   $field_instances['node-pottery_item-field_price'] = array(
     'bundle' => 'pottery_item',
@@ -199,8 +249,10 @@ function pot_general_field_default_field_instances() {
   t('Body');
   t('Inventory count');
   t('Inventory count represents the number of this pottery item that are available for sale.');
+  t('Pottery image');
   t('Price');
   t('Price represents the cost of a pottery item.');
+  t('Upload an image of the pottery item for sale.');
 
   return $field_instances;
 }

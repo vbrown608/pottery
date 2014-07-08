@@ -7,7 +7,9 @@
 include_once 'pot_general.features.inc';
 
 $files = array(
-  'hook_menu'
+  'hook_menu',
+  'hook_permission',
+  'hook_form',
 );
 
 foreach ($files as $file) {

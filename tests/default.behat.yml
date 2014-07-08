@@ -1,0 +1,22 @@
+default:
+  paths:
+    features: 'features'
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte: ~
+      selenium2: ~
+      base_url: http://pottery.dev
+      files_path: 'files/'
+    Drupal\DrupalExtension\Extension:
+      blackbox: ~
+      api_driver: drupal
+      drush:
+        alias: pot.local
+      drupal:
+        drupal_root: '../www'
+      subcontexts:
+        paths:
+          - '../www/sites/all/modules'
+      selectors:
+        error_message_selector: .messages.error
+        success_message_selector: .messages.status

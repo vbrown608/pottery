@@ -25,3 +25,19 @@ www/sites/all/modules/simplehtmldom
 
 # Ignore all auto-generated patch files
 PATCHES.txt
+
+# Ignore behat files that can be easily initialized
+tests/bin
+tests/vendor
+
+# Ignore test results
+test_results/
+tests/debug/
+
+# Ignore behat config file that needs to be instance-specific
+tests/behat.yml
+
+# Don't ignore the parts of the behat DrupalExtension we have patched
+!tests/vendor/drupal/drupal-extension/src/Drupal/Driver/Cores/Drupal7.php
+!tests/vendor/drupal/drupal-extension/src/Drupal/DrupalExtension/Context/DrupalContext.php
+!tests/vendor/drupal/drupal-extension/src/Drupal/DrupalExtension/Extension.php

@@ -13,6 +13,21 @@ function pot_general_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'home';
+  $context->description = 'The landing page for the pottery site.';
+  $context->tag = '';
+  $context->conditions = array();
+  $context->reactions = array();
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('The landing page for the pottery site.');
+  $export['home'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'internal';
   $context->description = 'Internal pages (excludes admin pages and homepage)';
   $context->tag = '';

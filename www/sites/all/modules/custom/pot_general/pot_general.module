@@ -5,3 +5,11 @@
  */
 
 include_once 'pot_general.features.inc';
+
+$files = array(
+  'hook_menu'
+);
+
+foreach ($files as $file) {
+  module_load_include('inc', 'pot_general', 'includes/' . $file);
+}

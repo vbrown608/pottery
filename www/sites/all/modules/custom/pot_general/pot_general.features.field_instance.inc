@@ -246,8 +246,8 @@ function pot_general_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-pottery_item-field_price'
-  $field_instances['node-pottery_item-field_price'] = array(
+  // Exported field_instance: 'node-pottery_item-field_pottery_price'
+  $field_instances['node-pottery_item-field_pottery_price'] = array(
     'bundle' => 'pottery_item',
     'default_value' => NULL,
     'deleted' => 0,
@@ -273,7 +273,7 @@ function pot_general_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_price',
+    'field_name' => 'field_pottery_price',
     'label' => 'Price',
     'required' => 1,
     'settings' => array(

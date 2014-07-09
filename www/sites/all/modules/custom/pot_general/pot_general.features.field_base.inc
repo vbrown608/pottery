@@ -128,13 +128,13 @@ function pot_general_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_price'
-  $field_bases['field_price'] = array(
+  // Exported field_base: 'field_pottery_price'
+  $field_bases['field_pottery_price'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_price',
+    'field_name' => 'field_pottery_price',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,

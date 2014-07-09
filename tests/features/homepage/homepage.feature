@@ -27,7 +27,7 @@ Feature: Homepage content
     And a "pottery_item" node with the following fields:
       | title | pink cup |
       | author | buffy |
-      | field_price | 10.00 |
+      | field_pottery_price | 10.00 |
       | field_inventory_count | 10 |
     When I go to "/home"
     Then I should see the text "pink cup"

@@ -683,6 +683,8 @@ function pot_general_user_default_permissions() {
     'name' => 'view own unpublished content',
     'roles' => array(
       'administrator' => 'administrator',
+      'manager' => 'manager',
+      'potter' => 'potter',
     ),
     'module' => 'node',
   );

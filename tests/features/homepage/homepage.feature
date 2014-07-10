@@ -17,7 +17,7 @@ Feature: Homepage content
   Scenario: Users should see a login block
     Given I am an anonymous user
     When I go to "/home"
-    # Then I should see...
+    Then I should see "User login"
 
   Scenario: User should see the titles of the newest pots
     Given a user with the following fields:

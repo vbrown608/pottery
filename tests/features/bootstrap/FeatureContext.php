@@ -50,7 +50,7 @@ class FeatureContext extends Drupal\DrupalExtension\Context\DrupalContext
       foreach ($row_hash as $field => $value) {
         switch ($field) {
           case 'roles':
-            $user->roles = array($value);
+            $user->roles = explode(',', $value);
             break;
           default:
             $user->{$field} = $value;

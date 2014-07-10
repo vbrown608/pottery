@@ -282,6 +282,16 @@ function pot_general_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'administer prices'.
+  $permissions['administer prices'] = array(
+    'name' => 'administer prices',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'manager' => 'manager',
+    ),
+    'module' => 'pot_general',
+  );
+
   // Exported permission: 'administer redirects'.
   $permissions['administer redirects'] = array(
     'name' => 'administer redirects',
@@ -435,6 +445,17 @@ function pot_general_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create pottery_item content'.
+  $permissions['create pottery_item content'] = array(
+    'name' => 'create pottery_item content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'manager' => 'manager',
+      'potter' => 'potter',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
@@ -462,11 +483,31 @@ function pot_general_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any pottery_item content'.
+  $permissions['delete any pottery_item content'] = array(
+    'name' => 'delete any pottery_item content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own page content'.
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
     'roles' => array(
       'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own pottery_item content'.
+  $permissions['delete own pottery_item content'] = array(
+    'name' => 'delete own pottery_item content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'manager' => 'manager',
+      'potter' => 'potter',
     ),
     'module' => 'node',
   );
@@ -480,9 +521,27 @@ function pot_general_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in pottery_type'.
+  $permissions['delete terms in pottery_type'] = array(
+    'name' => 'delete terms in pottery_type',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any pottery_item content'.
+  $permissions['edit any pottery_item content'] = array(
+    'name' => 'edit any pottery_item content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -505,6 +564,26 @@ function pot_general_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit own pottery_item content'.
+  $permissions['edit own pottery_item content'] = array(
+    'name' => 'edit own pottery_item content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'manager' => 'manager',
+      'potter' => 'potter',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in pottery_type'.
+  $permissions['edit terms in pottery_type'] = array(
+    'name' => 'edit terms in pottery_type',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'generate features'.

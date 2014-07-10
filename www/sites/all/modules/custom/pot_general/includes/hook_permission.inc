@@ -7,7 +7,7 @@
 /**
  * Implements hook_permission().
  */
-function npe_general_permission() {
+function pot_general_permission() {
   $permissions = array(
     'administer prices' => array(
       'title' => t('Administer pottery item prices'),

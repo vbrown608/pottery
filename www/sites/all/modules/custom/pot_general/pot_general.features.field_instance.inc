@@ -198,6 +198,52 @@ function pot_general_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-pottery_item-field_pottery_price'
+  $field_instances['node-pottery_item-field_pottery_price'] = array(
+    'bundle' => 'pottery_item',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Price represents the cost of a pottery item.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_decimal',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pottery_price',
+    'label' => 'Price',
+    'required' => 1,
+    'settings' => array(
+      'max' => '',
+      'min' => 0,
+      'prefix' => '$',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 33,
+    ),
+  );
+
   // Exported field_instance: 'node-pottery_item-field_pottery_type'
   $field_instances['node-pottery_item-field_pottery_type'] = array(
     'bundle' => 'pottery_item',
@@ -243,52 +289,6 @@ function pot_general_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 35,
-    ),
-  );
-
-  // Exported field_instance: 'node-pottery_item-field_pottery_price'
-  $field_instances['node-pottery_item-field_pottery_price'] = array(
-    'bundle' => 'pottery_item',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Price represents the cost of a pottery item.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 2,
-          'thousand_separator' => ' ',
-        ),
-        'type' => 'number_decimal',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_pottery_price',
-    'label' => 'Price',
-    'required' => 1,
-    'settings' => array(
-      'max' => '',
-      'min' => 0,
-      'prefix' => '$',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 33,
     ),
   );
 

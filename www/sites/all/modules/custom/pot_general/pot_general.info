@@ -201,3 +201,4 @@ features[variable][] = user_admin_role
 features[variable][] = user_register
 features[variable][] = xmlsitemap_generated_last
 features[variable][] = xmlsitemap_regenerate_needed
+features[views_view][] = pottery_items

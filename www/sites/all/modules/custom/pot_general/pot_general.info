@@ -27,7 +27,6 @@ dependencies[] = number
 dependencies[] = options
 dependencies[] = path
 dependencies[] = pathauto
-dependencies[] = pot_general
 dependencies[] = redirect
 dependencies[] = search
 dependencies[] = shortcut

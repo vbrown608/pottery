@@ -12,19 +12,19 @@ Feature: Homepage content
       | title | pink cup |
       | author | buffy |
       | field_pottery_price | 10.00 |
-      | field_inventory_count | 10 |
+      | field_inventory_count | 18 |
       | field_pottery_type | 1 |
     And a "pottery_item" node with the following fields:
       | title | red cup |
       | author | buffy |
       | field_pottery_price | 20.00 |
-      | field_inventory_count | 10 |
+      | field_inventory_count | 9 |
       | field_pottery_type | 1 |
     And a "pottery_item" node with the following fields:
       | title | blue bowl |
       | author | buffy |
       | field_pottery_price | 40.00 |
-      | field_inventory_count | 10 |
+      | field_inventory_count | 20 |
       | field_pottery_type | 3 |
 
   Scenario: Anonymous users can view the homepage
@@ -50,4 +50,4 @@ Feature: Homepage content
   Scenario: Users should see a total inventory block
     Given I am an anonymous user
     When I go to "/home"
-    Then I should see "User login"
+    Then I should see "Total inventory: 847"

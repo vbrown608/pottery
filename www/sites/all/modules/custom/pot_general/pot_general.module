@@ -10,6 +10,7 @@ $files = array(
   'hook_menu',
   'hook_permission',
   'hook_form',
+  'hook_block',
 );
 
 foreach ($files as $file) {

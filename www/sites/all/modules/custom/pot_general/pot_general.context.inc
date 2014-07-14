@@ -16,8 +16,49 @@ function pot_general_context_default_contexts() {
   $context->name = 'home';
   $context->description = 'The landing page for the pottery site.';
   $context->tag = '';
-  $context->conditions = array();
-  $context->reactions = array();
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '<front>' => '<front>',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'boxes-intro_text' => array(
+          'module' => 'boxes',
+          'delta' => 'intro_text',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'pot_general-inventory_count_block' => array(
+          'module' => 'pot_general',
+          'delta' => 'inventory_count_block',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
+        'views-pottery_items-most_recent_block' => array(
+          'module' => 'views',
+          'delta' => 'pottery_items-most_recent_block',
+          'region' => 'content',
+          'weight' => '-8',
+        ),
+        'user-login' => array(
+          'module' => 'user',
+          'delta' => 'login',
+          'region' => 'content',
+          'weight' => '-7',
+        ),
+        'system-user-menu' => array(
+          'module' => 'system',
+          'delta' => 'user-menu',
+          'region' => 'content',
+          'weight' => '-6',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
 
   // Translatables

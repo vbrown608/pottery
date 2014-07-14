@@ -13,7 +13,7 @@ function pot_general_user_default_roles() {
   // Exported role: administrator.
   $roles['administrator'] = array(
     'name' => 'administrator',
-    'weight' => 2,
+    'weight' => 4,
   );
 
   // Exported role: manager.
@@ -25,7 +25,7 @@ function pot_general_user_default_roles() {
   // Exported role: potter.
   $roles['potter'] = array(
     'name' => 'potter',
-    'weight' => 4,
+    'weight' => 2,
   );
 
   return $roles;

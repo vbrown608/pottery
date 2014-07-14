@@ -13,7 +13,7 @@ function pot_general_menu() {
 
   $items['home'] = array(
     'title' => 'Homepage',
-    'page callback' => 'npe_general_home',
+    'page callback' => 'pot_general_home',
     'description' => t('Pottery homepage'),
     'access callback' => TRUE,
     'type' => MENU_CALLBACK,
@@ -25,6 +25,6 @@ function pot_general_menu() {
 /**
  * Custom menu callback for /home.
  */
-function npe_general_home() {
+function pot_general_home() {
   return '';
 }

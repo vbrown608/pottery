@@ -1,5 +1,16 @@
 $breakpoint-no-queries: true;
 $breakpoint-no-query-fallbacks: true;
 
-// Re-render everything from styles.scss but without media queries.
-@import "pot-theme.styles";
+.lt-ie9 {
+
+  // Prevent IE from rendering faux-bold and faux-italic.
+  * {
+    font-weight: normal !important;
+    font-style: normal !important;
+  }
+
+  @import "ie/ie9";
+
+  // Re-render everything from styles.scss but without media queries.
+  @import "pot-theme.styles";
+}

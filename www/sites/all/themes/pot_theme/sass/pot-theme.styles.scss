@@ -3,6 +3,7 @@
 @import "breakpoint";
 @import "singularitygs";
 @import "toolkit-no-css";
+@import "susy";
 
 // Import variables, abstractions, base styles and components using globbing.
 //
@@ -18,5 +19,7 @@
 // dependencies shouldn't be a problem.
 @import "variables/**/*";
 @import "abstractions/**/*";
+@import "vendor/**/*";
+@import "layout/**/*";
 @import "base/**/*";
 @import "components/**/*";

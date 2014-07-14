@@ -1,0 +1,38 @@
+body {
+  @include base-text;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5,
+h6 {}
+
+p {}
+
+a {
+  // @include link-colors($caribbean-blue, $nectarine, $taro, $caribbean-blue, $nectarine);
+
+  &.active-trail,
+  &.active {}
+}
+
+blockquote {}
+
+em {
+  // @include italic;
+}
+
+strong {
+  // @include bold;
+}
+
+em strong,
+strong em {
+  // @include bold-italic;
+}

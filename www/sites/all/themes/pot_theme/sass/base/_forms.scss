@@ -4,8 +4,8 @@ select {
 }
 
 label {
-  @include form-label;
-  @include bold;
+  // @include form-label;
+  // @include bold;
   cursor: pointer;
 }
 

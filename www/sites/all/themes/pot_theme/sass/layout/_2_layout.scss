@@ -1,0 +1,31 @@
+.l-page {
+  // Define these elements as the grid containers.
+  @include container;
+
+  @include breakpoint($narrow) {
+    $container-width: $narrow-width;
+    @include set-container-width;
+  }
+
+  @include breakpoint($normal) {
+    $container-width: $normal-width;
+    @include set-container-width;
+  }
+
+  @include breakpoint($wide) {
+    $container-width: $wide-width;
+    @include set-container-width;
+  }
+}
+
+.l-region--sidebar-first {
+  @include breakpoint($narrow) {
+    @include span-columns(1, 4);
+  }
+}
+
+.l-content {
+  @include breakpoint($narrow) {
+    @include span-columns(3 omega, 4);
+  }
+}

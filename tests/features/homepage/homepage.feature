@@ -51,3 +51,13 @@ Feature: Homepage content
     Given I am an anonymous user
     When I go to "/home"
     Then I should see "Total inventory: 847"
+
+  Scenario: Anonymous users should see 'anonymous'
+    Given I am an anonymous user
+    When I go to "/home"
+    Then I should see "anonymous"
+
+  Scenario: Logged in users should see their user name
+    Given I am logged in as "buffy"
+    When I go to "/home"
+    Then I should see "buffy"

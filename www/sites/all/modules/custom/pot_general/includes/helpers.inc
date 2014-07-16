@@ -24,3 +24,18 @@ function pot_general_get_inventory_count() {
 
   return $sum;
 }
+
+/**
+ * Returns user name.
+ *
+ * @param $uid
+ */
+function pot_general_get_user_name($uid) {
+  $user = user_load($uid);
+  if (!empty($user) && $user->uid != 0) {
+    return $user->name;
+  }
+  else {
+    return 'anonymous';
+  }
+}

@@ -16,6 +16,11 @@ function pot_general_block_info() {
     'cache' => DRUPAL_NO_CACHE,
   );
 
+  $blocks['user_name_block'] = array(
+    'info' => t('User name and emoji'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+
   return $blocks;
 }
 
@@ -29,9 +34,19 @@ function pot_general_block_view($delta = '') {
   switch ($delta) {
     case 'inventory_count_block':
       $inventory = pot_general_get_inventory_count();
-      $block['subject'] = t('Inventory');
-      $block['content'] = t('Total inventory: @inventory', array('@inventory' => $inventory));
+      $result = theme('inventory_count', array('inventory' => $inventory));
+      if (!empty($result)) {
+        $block['content'] = $result;
+      }
+      break;
+
+    case 'user_name_block':
+      $result = theme('user_name', array());
+      if (!empty($result)) {
+        $block['content'] = $result;
+      }
       break;
   }
+
   return $block;
 }

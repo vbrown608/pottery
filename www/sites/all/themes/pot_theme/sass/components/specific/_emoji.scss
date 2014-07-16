@@ -1,0 +1,14 @@
+.emoji {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  @include background-size(contain);
+  background-position: left center;
+  background-repeat: no-repeat;
+
+  @for $i from 1 through 6 {
+    &.emoji-#{$i} {
+      background-image: url('../images/emoji-' + $i + '.png');
+    }
+  }
+}

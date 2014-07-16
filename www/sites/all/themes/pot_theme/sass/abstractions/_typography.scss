@@ -15,3 +15,12 @@
 @function em-base($target, $context: $base-line-height) {
    @return emify($target, $context);
 }
+
+/**
+ * Used for form labels.
+ */
+@mixin sidebar-text {
+  font-size: em-font(10);
+  line-height: em-font(20, 15);
+  color: $navy;
+}

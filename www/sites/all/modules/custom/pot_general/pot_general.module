@@ -11,7 +11,8 @@ $files = array(
   'hook_permission',
   'hook_form',
   'hook_block',
-  'helpers'
+  'hook_theme',
+  'helpers',
 );
 
 foreach ($files as $file) {
